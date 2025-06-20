@@ -18,6 +18,9 @@ A full-stack restaurant reservation web application built with the MERN stack (M
 
 ## Screenshots
 ![Home Page](./frontend/public/screenshot-home.png)
+![About Us Page](./frontend/public/screenshot-about.png)
+![Menu Page](./frontend/public/screenshot-menu.png)
+![Contact Page](./frontend/public/screenshot-contact.png)
 ![Reservation Page](./frontend/public/screenshot-reservation.png)
 
 ## Getting Started
