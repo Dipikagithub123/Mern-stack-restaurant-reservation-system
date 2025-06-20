@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
@@ -10,26 +9,24 @@ const About = () => {
           <div className="banner">
             <div className="top">
               <h1 className="heading">ABOUT US</h1>
-              <p>The only thing we're serious about is food.</p>
+              <p>Passionate about delicious, wholesome vegetarian food.</p>
             </div>
             <p className="mid">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Provident possimus optio adipisci dolores impedit illum iusto
-              perferendis, laudantium quod accusamus consequuntur consectetur,
-              tempore nulla error iure reiciendis dolorem assumenda.
-              Necessitatibus fugit asperiores totam rem esse exercitationem
-              iusto ipsum qui dolore ex, accusantium repellat mollitia
-              repellendus.
+              We believe that vegetarian cuisine is not just a choice, but a way
+              to celebrate vibrant flavors and fresh ingredients. Our menu
+              features thoughtfully crafted dishes that nourish both body and
+              soul. Whether you’re a lifelong vegetarian or simply exploring,
+              you’ll find something to delight your taste buds here.
             </p>
             <Link to={"/"}>
-              Explore Menu{" "}
+              Explore Vegetarian Menu{" "}
               <span>
                 <HiOutlineArrowRight />
               </span>
             </Link>
           </div>
           <div className="banner">
-            <img src="about.png" alt="about" />
+            <img src="/about.jpeg" alt="about vegetarian menu" />
           </div>
         </div>
       </section>

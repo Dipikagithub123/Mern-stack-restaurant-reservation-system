@@ -1,4 +1,4 @@
-import React from "react";
+
 import { data } from "../restApi.json";
 const Team = () => {
   return (
@@ -7,9 +7,7 @@ const Team = () => {
         <div className="heading_section">
           <h1 className="heading">OUR TEAM</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            fugit dicta, ipsum impedit quam laboriosam quas doloremque quia
-            perferendis laborum.
+           Meet the talented individuals who drive our vision forward. Our team is a diverse group of passionate professionals, each bringing unique skills and creativity to the table. Together, we are committed to delivering excellence, fostering innovation, and building lasting relationships with our clients and community.
           </p>
         </div>
         <div className="team_container">

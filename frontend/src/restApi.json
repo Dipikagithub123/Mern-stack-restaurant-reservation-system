@@ -5,68 +5,68 @@
                 "id": 1,
                 "image": "./quality_food.svg",
                 "title": "QUALITY FOOD",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
+                "description": "We use only the freshest, locally-sourced ingredients to craft every plate. Each bite bursts with natural flavors, vibrant colors, and wholesome goodness you can taste and trust."
             },
             {
                 "id": 2,
                 "image": "./super_taste.svg",
                 "title": "SUPER TASTE",
-                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing sit amet elit. Sit voluptates quaerat pariatur." 
+                "description":  "Our chefs blend global inspiration and creative flair to deliver vegetarian dishes that surprise and delight your taste buds. Prepare for a symphony of flavors in every meal!"
             },
             {
                 "id": 3,
                 "image": "./fast_delivery.svg",
                 "title": "FAST DELIVERY",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus officia qui repellat." 
+                "description":  "From our kitchen to your table in record time! Enjoy piping hot, garden-fresh meals delivered swiftly—so you never have to wait to savor your favorites."
             }
         ],
         "dishes": [
             {
                 "id": 1,
                 "image": "./dinner1.jpeg",
-                "title": "ROASTED LAMB RUMP",
+                "title": "GRILLED PANEER TIKKA",
                 "category": "Dinner"
             },
             {
                 "id": 2,
-                "image": "./dinner2.png",
-                "title": "CITRUS CURED SALMON",
+                "image": "./dinner2.jpeg",
+                "title": "SPINACH & CORN LASAGNA",
                 "category": "Dinner"
             },
             {
                 "id": 3,
-                "image": "./breakfast1.png",
-                "title": "PAN SEARED SEA BASS",
+                "image": "./breakfast1.jpeg",
+                "title": "AVOCADO TOAST WITH CHERRY TOMATOES",
                 "category": "Breakfast"
             },
             {
                 "id": 4,
-                "image": "./dinner3.png",
-                "title": "STUFFED STRAWBERRY",
+                "image": "./dinner3.jpeg",
+                "title": "STUFFED BELL PEPPERS",
                 "category": "Dinner"
             },
             {
                 "id": 5,
-                "image": "./lunch1.png",
-                "title": "BEEF BURGER MEAL",
+                "image": "./lunch1.jpeg",
+                "title":"VEGGIE BURGER MEAL",
                 "category": "Lunch"
             },
             {
                 "id": 6,
-                "image": "./dinner4.png",
-                "title": "MUSSELS SOUP",
+                "image": "./dinner4.jpeg",
+                "title": "CREAMY MUSHROOM SOUP",
                 "category": "Dinner"
             },
             {
                 "id": 7,
-                "image": "./dinner5.png",
-                "title": "ITALIAN SPAGHETTI",
+                "image": "./dinner5.jpeg",
+                "title": "ITALIAN PESTO SPAGHETTI",
                 "category": "Dinner"
             },
             {
                 "id": 8,
-                "image": "./dinner6.png",
-                "title": "GRILLED FISH",
+                "image": "./dinner6.jpeg",
+                "title": "GRILLED VEGETABLE PLATTER",
                 "category": "Dinner"
             }
         ],
