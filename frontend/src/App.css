@@ -985,15 +985,7 @@ footer .container .banner .right {
 
   /* Fix for Header/Logo - This can be removed if Navbar.jsx is handling it */
   /*
-  nav .logo {
-    font-size: 1.5rem; 
-    flex: 2; 
-  }
-  nav .menuBtn {
-    flex: 1; 
-    padding: 8px 12px;
-    font-size: 14px;
-    text-align: center;
-  }
+
+
   */
 }
