@@ -13,34 +13,37 @@ const Nav = styled.nav`
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 1rem 0;
-`;
-
-const NavContainer = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
 `;
 
-const NavLinks = styled.div`
+const DesktopNav = styled.div`
   display: flex;
   gap: 2rem;
   align-items: center;
 
   @media (max-width: 768px) {
-    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    padding: 2rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
   }
+`;
+
+const MobileNav = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-150%)')};
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
 `;
 
 const NavLink = styled(Link)`
@@ -74,7 +77,8 @@ const BookNowButton = styled(Link)`
 const HamburgerIcon = styled.div`
   display: none;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #333;
 
   @media (max-width: 768px) {
     display: block;
@@ -88,22 +92,33 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  }
+
   return (
-    <Nav>
-      <NavContainer>
+    <>
+      <Nav>
         <Logo />
+        <DesktopNav>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/menu">Menu</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+          <BookNowButton to="/reservation">Book Now</BookNowButton>
+        </DesktopNav>
         <HamburgerIcon onClick={toggleMenu}>
           {isOpen ? <IoMdClose /> : <GiHamburgerMenu />}
         </HamburgerIcon>
-        <NavLinks isOpen={isOpen}>
-          <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
-          <NavLink to="/menu" onClick={toggleMenu}>Menu</NavLink>
-          <NavLink to="/about" onClick={toggleMenu}>About</NavLink>
-          <NavLink to="/contact" onClick={toggleMenu}>Contact</NavLink>
-          <BookNowButton to="/reservation" onClick={toggleMenu}>Book Now</BookNowButton>
-        </NavLinks>
-      </NavContainer>
-    </Nav>
+      </Nav>
+      <MobileNav isOpen={isOpen}>
+        <NavLink to="/" onClick={closeMenu}>Home</NavLink>
+        <NavLink to="/menu" onClick={closeMenu}>Menu</NavLink>
+        <NavLink to="/about" onClick={closeMenu}>About</NavLink>
+        <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+        <BookNowButton to="/reservation" onClick={closeMenu}>Book Now</BookNowButton>
+      </MobileNav>
+    </>
   );
 };
 
